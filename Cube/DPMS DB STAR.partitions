@@ -1,0 +1,165 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dd527e19-8ce6-4a21-8f70-51a7fe5ddb1b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DPMS DB STAR</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Daily Retail Item Transaction Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="da1a1620-ee51-404f-bfcc-2bbce57e36e2">
+          <ID>Daily Retail Item Transaction Fact</ID>
+          <Name>Daily Retail Item Transaction Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9baddb74-44ec-4f6b-a68b-459ab18bec92">
+            <DataSourceViewID>DPMS DB STAR</DataSourceViewID>
+            <TableID>dbo_DailyRetailItemTransactionFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Item Discount Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f20eca18-839a-4cd3-a7c6-b7f9c63660b0">
+          <ID>Item Discount Fact</ID>
+          <Name>Item Discount Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="46bd0026-c537-4219-b00c-929ecb55c65f">
+            <DataSourceViewID>DPMS DB STAR</DataSourceViewID>
+            <TableID>dbo_ItemDiscountFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Monthly Retail Item Transaction Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="27acfea7-c21c-4e64-8037-af2ee750a13f">
+          <ID>Monthly Retail Item Transaction Fact</ID>
+          <Name>Monthly Retail Item Transaction Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="836fcb0d-adc3-42d3-b1e2-1e0f7d1bf138">
+            <DataSourceViewID>DPMS DB STAR</DataSourceViewID>
+            <TableID>dbo_MonthlyRetailItemTransactionFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Receipt Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8680f491-d4e1-42f3-a6e5-08d8845b6436">
+          <ID>Receipt Fact</ID>
+          <Name>Receipt Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="58b95dbe-d764-41dd-a3dd-c64fd8467fc0">
+            <DataSourceViewID>DPMS DB STAR</DataSourceViewID>
+            <TableID>dbo_ReceiptFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Retail Item Transaction Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0ec7a358-d8ff-4298-8daf-6b1d0050ece0">
+          <ID>Retail Item Transaction Fact</ID>
+          <Name>Retail Item Transaction Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b2213d79-b922-41f0-9851-f7c3a8915fb2">
+            <DataSourceViewID>DPMS DB STAR</DataSourceViewID>
+            <TableID>dbo_RetailItemTransactionFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Retail Receipt Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5c68c473-2ff8-44da-be00-27c1fd7f9b54">
+          <ID>Retail Receipt Fact</ID>
+          <Name>Retail Receipt Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b3baf8e3-dda3-4f85-be62-43489287f528">
+            <DataSourceViewID>DPMS DB STAR</DataSourceViewID>
+            <TableID>dbo_RetailReceiptFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Tenant Receipt Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="725902a8-bf5d-4eb6-8753-0c6fc6aa1ec9">
+          <ID>Tenant Receipt Fact</ID>
+          <Name>Tenant Receipt Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a63248ca-f091-4d11-b09b-5ea2f9dc0f75">
+            <DataSourceViewID>DPMS DB STAR</DataSourceViewID>
+            <TableID>dbo_TenantReceiptFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Member Card Bridge</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e92c5ecf-5ce0-48a2-9749-dd9a349262cb">
+          <ID>Member Card Bridge</ID>
+          <Name>Member Card Bridge</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d02584c0-6a80-4ff2-aa70-7d6b8a653dd9">
+            <DataSourceViewID>DPMS DB STAR</DataSourceViewID>
+            <TableID>dbo_MemberCardBridge</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

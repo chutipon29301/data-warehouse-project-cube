@@ -1,0 +1,182 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="432a60fa-d393-4cdd-88a9-801ef2bcc951" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Card Dim</ID>
+  <Name>Card Dim</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a479bef1-2835-4a8f-877d-fd74b75b26ec">
+    <DataSourceViewID>DPMS DB STAR</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="778e51ae-35d5-4574-a419-ff49f1dbe13b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="a86df017-56f8-42ad-b2d0-517de4735c83">
+      <ID>Card Key</ID>
+      <Name>Card Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2bcf48bb-bcce-42c2-8fe9-29b637bf3b35">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e781d167-1b12-4b43-8b44-7888cc0617bf">
+            <TableID>dbo_CardDim</TableID>
+            <ColumnID>CardKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="906dcaac-e721-4904-ae3d-6a278c6e053b">
+          <AttributeID>Card Number</AttributeID>
+          <Name>Card Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a796c587-1d5b-445d-a520-b064d4163cc9">
+          <AttributeID>Card Type</AttributeID>
+          <Name>Card Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="290f940a-ee7e-4d5b-93b3-774e00da3ff4">
+          <AttributeID>Total Point</AttributeID>
+          <Name>Total Point</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="70ad85ce-856d-4a8b-9e5c-23435948e44a">
+          <AttributeID>Source</AttributeID>
+          <Name>Source</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a22123e3-4f03-4241-b5f2-69f24cd5355d">
+          <AttributeID>Card Name</AttributeID>
+          <Name>Card Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e9b993ee-cdc4-4797-bc59-4d836d3e7bea">
+      <ID>Card Number</ID>
+      <Name>Card Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fef7d7ee-3b39-49a8-8aca-f0a2334906e0">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7228261f-7610-4939-abb0-00a2860e8875">
+            <TableID>dbo_CardDim</TableID>
+            <ColumnID>CardNumber</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f767bf3d-0620-49f7-8baf-0fc3d741d50c">
+      <ID>Card Type</ID>
+      <Name>Card Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="16b3fcad-a8b9-4364-9800-138a43152754">
+          <DataType>WChar</DataType>
+          <DataSize>64</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="16b92dc9-78cf-4903-b767-7b13bb27c7f0">
+            <TableID>dbo_CardDim</TableID>
+            <ColumnID>CardType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c98dd824-51c6-4cb6-84f7-57b797e78fff">
+      <ID>Total Point</ID>
+      <Name>Total Point</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3637df5-6eaa-42fc-94ef-854f55bf7aee">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db0bfed1-b59d-423c-8511-2b4f87162597">
+            <TableID>dbo_CardDim</TableID>
+            <ColumnID>TotalPoint</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="99760a5e-45fc-45a8-9e4f-019c561b80c2">
+      <ID>Source</ID>
+      <Name>Source</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a341d2d-0a38-4100-961d-8cb28e539373">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5cf52d10-c5d3-4cb8-b521-0dbf15d4cae5">
+            <TableID>dbo_CardDim</TableID>
+            <ColumnID>Source</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4a1d30cd-d94b-4a34-a849-689556db8441">
+      <ID>Card Name</ID>
+      <Name>Card Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9ed8466-1e1c-453a-8c64-ed8b035a012c">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4c7e06e-a462-476b-ac5f-98765357ef57">
+            <TableID>dbo_CardDim</TableID>
+            <ColumnID>CardName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

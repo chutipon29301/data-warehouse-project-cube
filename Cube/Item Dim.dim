@@ -1,0 +1,494 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1e4c98f5-2ef6-4bc5-bf43-78005812063e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Item Dim</ID>
+  <Name>Item Dim</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6206" scrolltop="-10663" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="15452" y="26326" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="ItemDim" left="46" top="-450" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ItemDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-6206</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-10663</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>46</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-450</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="119">
+            <Shape Id="Item Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Item Key" />
+                <Attribute Id="Barcode" />
+                <Attribute Id="Brand" />
+                <Attribute Id="Brandcode" />
+                <Attribute Id="Item Code" />
+                <Attribute Id="Item Name" />
+                <Attribute Id="Vendor Code" />
+                <Attribute Id="Vendor Name" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Lv6 Catagory" Expanded="false">
+              <Attributes>
+                <Attribute Id="Lv6 Catagory" />
+              </Attributes>
+              <Position x="173" y="20" />
+            </Shape>
+            <Shape Id="Lv5 Catagory" Expanded="false">
+              <Attributes>
+                <Attribute Id="Lv5 Catagory" />
+              </Attributes>
+              <Position x="173" y="68" />
+            </Shape>
+            <Shape Id="Lv4 Catagory" Expanded="false">
+              <Attributes>
+                <Attribute Id="Lv4 Catagory" />
+              </Attributes>
+              <Position x="173" y="116" />
+            </Shape>
+            <Shape Id="Lv3 Catagory" Expanded="false">
+              <Attributes>
+                <Attribute Id="Lv3 Catagory" />
+              </Attributes>
+              <Position x="173" y="164" />
+            </Shape>
+            <Shape Id="Lv2 Catagory" Expanded="false">
+              <Attributes>
+                <Attribute Id="Lv2 Catagory" />
+              </Attributes>
+              <Position x="173" y="212" />
+            </Shape>
+            <Shape Id="Lv1 Catagory" Expanded="false">
+              <Attributes>
+                <Attribute Id="Lv1 Catagory" />
+              </Attributes>
+              <Position x="173" y="260" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="af0f885f-8ec7-495c-aa88-7a77bdb676d4">
+    <DataSourceViewID>DPMS DB STAR</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="aeed843b-f256-4280-801e-1ebdddee160c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="17112df8-e2f5-4882-8269-c6b21ab1a068">
+      <ID>Item Key</ID>
+      <Name>Item Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9847b139-9fc9-47c2-a48a-70eff8d5f612">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4bcd8df2-238d-4ed5-9f29-2dbbfa9380ce">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>ItemKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ecc3b4eb-41a8-4367-a9bb-dc7d76f52a98">
+          <AttributeID>Item Code</AttributeID>
+          <Name>Item Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8f8ded3a-2551-42a4-ba3a-d61e1528ece5">
+          <AttributeID>Item Name</AttributeID>
+          <Name>Item Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e30860c9-f178-4b31-bd03-54e6e9ae1485">
+          <AttributeID>Lv1 Catagory</AttributeID>
+          <Name>Lv1 Catagory</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6de7bf4a-a987-4177-adb3-f6850506ff9a">
+          <AttributeID>Lv2 Catagory</AttributeID>
+          <Name>Lv2 Catagory</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="68c018c1-93a3-4d39-b739-2ae90e3223ef">
+          <AttributeID>Lv3 Catagory</AttributeID>
+          <Name>Lv3 Catagory</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="45b112ab-db21-417d-babd-c8a600df3288">
+          <AttributeID>Lv4 Catagory</AttributeID>
+          <Name>Lv4 Catagory</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4e8239fe-676e-4f7a-94c8-5c54671411ac">
+          <AttributeID>Lv5 Catagory</AttributeID>
+          <Name>Lv5 Catagory</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="08268a51-4ac0-4771-8951-b654b5d4ff8b">
+          <AttributeID>Lv6 Catagory</AttributeID>
+          <Name>Lv6 Catagory</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b8fca868-ccbd-4b3f-95ec-7fe9bb6f97b2">
+          <AttributeID>Brand</AttributeID>
+          <Name>Brand</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0eed9331-eb10-46b6-a44f-07f5d6dfe96d">
+          <AttributeID>Brandcode</AttributeID>
+          <Name>Brandcode</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ee36dd36-0fa8-46c7-a692-f8232ac0fda9">
+          <AttributeID>Vendor Name</AttributeID>
+          <Name>Vendor Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="730aaa8e-fc08-456b-9542-90f70b252bd6">
+          <AttributeID>Vendor Code</AttributeID>
+          <Name>Vendor Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e58c32c1-03b5-4594-8fcf-6cc6eecc72bc">
+          <AttributeID>Barcode</AttributeID>
+          <Name>Barcode</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="132d976c-28f9-42f9-a41a-a8541c9be571">
+      <ID>Item Code</ID>
+      <Name>Item Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1655e1a6-9c40-4b2c-9e98-577db09e8e10">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b420b8e-37c9-4d41-8517-0042a6bcf8c4">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>ItemCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="555dbb43-a399-4d07-8080-8e5e4262a382">
+      <ID>Item Name</ID>
+      <Name>Item Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eb6271b3-85b9-4bb0-b48a-8a5c6458dec6">
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c15b78b-184d-42a9-aa8e-b8fdd17222f0">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>ItemName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="596ac91a-b71b-4580-9c8c-3d387d04bbf9">
+      <ID>Lv1 Catagory</ID>
+      <Name>Lv1 Catagory</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bfde0767-3503-425e-948e-bee1b7795a5a">
+          <DataType>WChar</DataType>
+          <DataSize>254</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9aab76ba-6e6f-4f71-9d45-ecc1115854f2">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>Lv1Catagory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ba9e337a-399e-45e4-bbd1-2b16ca9bfce6">
+      <ID>Lv2 Catagory</ID>
+      <Name>Lv2 Catagory</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="59a7355f-db08-4fec-b155-458b6b1539e0">
+          <DataType>WChar</DataType>
+          <DataSize>254</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d53c8e2-3930-4022-870b-b957cf6cc317">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>Lv2Catagory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7842d5f7-d346-4d4f-b99d-560fe4292d3d">
+      <ID>Lv3 Catagory</ID>
+      <Name>Lv3 Catagory</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8fbe2c95-a665-48f7-ac74-7e77097a0b07">
+          <DataType>WChar</DataType>
+          <DataSize>254</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="29ef806f-c3c6-4b6c-bba9-557fcb98471b">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>Lv3Catagory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="16ee17c8-adea-4fb6-81a5-379a5ffde51d">
+      <ID>Lv4 Catagory</ID>
+      <Name>Lv4 Catagory</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="299c535b-4526-463f-8e5c-8ebe35dfe291">
+          <DataType>WChar</DataType>
+          <DataSize>254</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="23d928d1-609c-4133-a5e7-b2f50323da99">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>Lv4Catagory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8f58b347-87b7-49fb-afff-9edc0c39d60b">
+      <ID>Lv5 Catagory</ID>
+      <Name>Lv5 Catagory</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ad35ea8-a928-4807-8374-8a2e3f8f710a">
+          <DataType>WChar</DataType>
+          <DataSize>254</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3194ab11-c9b7-488a-ad69-2fae15a76da5">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>Lv5Catagory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="690542a8-61c7-46c6-9efd-139dc076afc4">
+      <ID>Lv6 Catagory</ID>
+      <Name>Lv6 Catagory</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="03c7f724-aead-4352-bc29-6759bf91c534">
+          <DataType>WChar</DataType>
+          <DataSize>254</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8681837c-348a-4dfe-8f47-74940f3ac18b">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>Lv6Catagory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="08b7cada-c762-45d5-ad76-91710260a016">
+      <ID>Brand</ID>
+      <Name>Brand</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f1d027a5-f26d-47a3-a5ac-17c4e79de0e6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f02c276-d69c-48d9-98d4-813ed36c17f5">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>Brand</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b09f6a56-c97f-470d-af85-41079491b9ec">
+      <ID>Brandcode</ID>
+      <Name>Brandcode</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a227f77-7350-4393-b1c9-0b287f2f78a3">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe42bd53-7bed-4bb7-8a8f-78a9d30e1a01">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>Brandcode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fdcc2122-271e-4e90-be98-5becfd927567">
+      <ID>Vendor Name</ID>
+      <Name>Vendor Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7c89f25d-1a2b-46bd-b10f-4e3c8b83fb43">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e406fa12-1290-40e3-8438-b4fb61b41165">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>VendorName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="15e1d709-12dc-4b6f-b82c-e3c730d0e215">
+      <ID>Vendor Code</ID>
+      <Name>Vendor Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e882f9fb-6870-4cb9-9eaa-210ba490be8e">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5cf3d7bd-ecfb-4a44-9a0f-63cd62b09cce">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>VendorCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ddd27b2d-74be-4d26-9962-e6ba67ca72e3">
+      <ID>Barcode</ID>
+      <Name>Barcode</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5148a868-4042-445a-b10b-9b0fe2206dbd">
+          <DataType>WChar</DataType>
+          <DataSize>400</DataSize>
+          <NullProcessing>Preserve</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="098f0f7a-52f1-4a5d-a480-0a66f04a75db">
+            <TableID>dbo_ItemDim</TableID>
+            <ColumnID>Barcode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="3fc11ea0-6fe4-40ad-ac71-ecb33b4cda5d">
+      <ID>Hierarchy</ID>
+      <Name>CategoryHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="10e07f58-f3e1-428d-b5ee-f324e79f1323">
+          <ID>Lv1 Catagory</ID>
+          <Name>Lv1 Catagory</Name>
+          <SourceAttributeID>Lv1 Catagory</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="77e2956b-f839-4030-ae1b-7e8781dca744">
+          <ID>Lv2 Catagory</ID>
+          <Name>Lv2 Catagory</Name>
+          <SourceAttributeID>Lv2 Catagory</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="11c1bea2-a8d3-4c40-ba46-7988dfd63427">
+          <ID>Lv3 Catagory</ID>
+          <Name>Lv3 Catagory</Name>
+          <SourceAttributeID>Lv3 Catagory</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6069f356-e871-47f6-836a-480be99b0790">
+          <ID>Lv4 Catagory</ID>
+          <Name>Lv4 Catagory</Name>
+          <SourceAttributeID>Lv4 Catagory</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cdda596e-1212-4958-8548-2fd66abbc495">
+          <ID>Lv5 Catagory</ID>
+          <Name>Lv5 Catagory</Name>
+          <SourceAttributeID>Lv5 Catagory</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5f8b8615-beb0-436e-96e1-52138428ebc5">
+          <ID>Lv6 Catagory</ID>
+          <Name>Lv6 Catagory</Name>
+          <SourceAttributeID>Lv6 Catagory</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7aac827d-7aef-4359-b5b7-dc54cd885cb8">
+          <ID>Item Name</ID>
+          <Name>Item Name</Name>
+          <SourceAttributeID>Item Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="256037b6-bdbe-4147-8eb1-2a5a96c8d34e">
+      <ID>Hierarchy 1</ID>
+      <Name>BrandHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="a80c298d-2f70-4299-9254-d4da7cc23574">
+          <ID>Brand</ID>
+          <Name>Brand</Name>
+          <SourceAttributeID>Brand</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ef4f2484-3b62-4f05-9a58-eea063a3bea7">
+          <ID>Item Name</ID>
+          <Name>Item Name</Name>
+          <SourceAttributeID>Item Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
